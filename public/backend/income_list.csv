@@ -1,0 +1,4 @@
+account_category_name,account_name,amount,type,description,date,is_income,is_expense
+Prepaid Expenses,Rocket,0,credit,Starting balance,,1,0
+Revenue,Cash,2000,credit,revenue from sell,2023-09-01,1,0
+Other expense,Rocket,500,credit,Balance received from another account,,1,0

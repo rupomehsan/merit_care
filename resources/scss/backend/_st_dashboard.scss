@@ -1,0 +1,134 @@
+.st_content{
+    background-color: #121421;
+}
+.st_dashboard_wrapper {
+    background-color: rgba(255, 255, 255, 0);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    .left_navbar {
+        &.active {
+            // width: 280px !important;
+            overflow-x: auto;
+            margin-left: 0px !important;
+        }
+        transition-duration: 0.3s;
+        width: 280px;
+        margin-left: -280px;
+        background-color: #242935 !important;
+        overflow-x: auto;
+        @media screen and (max-width: 600px) {
+            width: 0px;
+        }
+        #main-menu-navigation {
+            margin-top: 50px;
+            list-style-type: none;
+            padding-left: 0px;
+            li {
+                ul{
+                    display: none;
+                    list-style-type: none;
+                    padding-left: 20px;
+                    transition: all 0.2s ease-in-out;
+                }
+                &:has(a.active),
+                &.active {
+                    ul{
+                        display: block;
+                        transition: all 0.2s ease-in-out;
+                    }
+                }
+                .nested_list_sidebar {
+                    // display: none;
+                    margin-top: 10px;
+
+                    li {
+                        a {
+                            // display: block;
+                            padding: 8px 15px;
+                            // border-bottom: 1px solid #10558d;
+                            align-items: center;
+                            color: rgb(241, 237, 237);
+                            font-size: 1.1rem;
+                            font-family: Montserrat, Helvetica, Arial, serif;
+                            font-weight: 400;
+                            i {
+                                font-size: 14px;
+                                padding-right: 5px;
+                            }
+                            // span {
+
+                            // }
+                            .drop_down_icon{
+                                margin: 0;
+                            }
+                        }
+                        a:hover {
+                            color: #0c7db1;
+                            background:white;
+                            border-right: 2px solid rgb(5, 68, 104);
+                        }
+                    }
+                }
+                a {
+                    display: block;
+                    padding: 10px 15px;
+                    // border-bottom: 1px solid #10558d;
+                    align-items: center;
+                    color: rgb(241, 237, 237);
+                    font-size: 1.1rem;
+                    font-family: Montserrat, Helvetica, Arial, serif;
+                    font-weight: 400;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    i {
+                        font-size: 14px;
+                        padding-right: 5px;
+                        line-height: 14px;
+                    }
+                    span {
+                        max-width: 190px;
+                        display: inline-block;
+                        text-overflow: ellipsis;
+                        box-sizing: border-box;
+                        padding-right: 5px;
+                        font-size: 14px;
+                        line-height: 14px;
+                    }
+
+                    .drop_down_icon{
+                        margin: 0;
+                    }
+                }
+
+                &.active,
+                &:has(.active){
+                    >a{
+                        color: #48ba81;
+                        // border-left: 3px solid #f4b806;
+                    }
+                }
+
+                a.active,
+                a:hover {
+                    color: #48ba81;
+                    border-left: 3px solid #f4b806;
+                }
+            }
+        }
+    }
+    .st_content {
+        flex: 1;
+        overflow-x: auto;
+        .card {
+            @media screen and (max-width: 600px) {
+                .dashboard_header {
+                    padding: 6px 0px 6px 0px;
+                }
+            }
+        }
+
+    }
+}

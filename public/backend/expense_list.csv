@@ -1,0 +1,4 @@
+account_category_name,account_name,amount,type,description,date,is_income,is_expense
+Checking,Bkash,15000,debit,monthly office rent,2023-06-21,0,1
+Savings,Bkash,15000,debit,monthly office current bill,2023-05-21,0,1
+Other expense,Cash,500,debit,Balance transfer,2023-05-22,0,1
